@@ -3,11 +3,6 @@ from rules import Rules
 
 class Player(BaseBot):
     def choose_card(self, top_card):
-        card = input("Enter the card to play or 'draw' to draw a card: ")
-        if(card=='draw'):
-            return None
-        else:
-            return card
         # This is intentionally left simple for competition participants to implement their strategy.
         # They have access to self.hand and the top_card.
         # Example:
